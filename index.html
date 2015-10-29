@@ -9,7 +9,7 @@
     <script src="js/vendor/modernizr.min.js"></script>
     </head>
     <body>
-    <div id="navigation">
+    <div id="navigation" class="fixed animated">
         <div class="row">
             <div class="small-12 columns">
                 
@@ -127,33 +127,55 @@
                     <img class="authentic-banner lazy" data-original="images/five-authentic-flavors.png">
                   </div>
                   <div class="authentic-copy small-12 medium-12 large-12 columns">
-                      <img class="lazy" data-original="images/limes.png">
-                      <h3>Did you Know?</h3>
-                      <p>Cholula Chili Lime Hot Sauce helps keep your guacamole from browning!</p>
+                      <div id="lime" class="active">
+                          <img src="images/limes.png">
+                          <h3>Did you Know?</h3>
+                          <p>Cholula Chili Lime Hot Sauce helps keep your guacamole from browning!</p>
+                      </div>
+                      <div id="chipotle" class="hide">
+                        <img src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder">                          
+                          <h3>Chipotle</h3>
+                          <p>Cholula Chili Lime Hot Sauce helps keep your guacamole from browning!</p>
+                      </div>
+                      <div id="green-pepper" class="hide">
+                        <img src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder">                          
+                          <h3>Green Pepper</h3>
+                          <p>Cholula Chili Lime Hot Sauce helps keep your guacamole from browning!</p>
+                      </div>
+                      <div id="chili" class="hide">
+                        <img src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder">                          
+                          <h3>Chili Garlic</h3>
+                          <p>Cholula Chili Lime Hot Sauce helps keep your guacamole from browning!</p>
+                      </div>
+                      <div id="original" class="hide">
+                        <img src="https://api.fnkr.net/testimg/350x200/00CED1/FFF/?text=img+placeholder">                          
+                          <h3>Original</h3>
+                          <p>Cholula Chili Lime Hot Sauce helps keep your guacamole from browning!</p>
+                      </div>
                   </div>
               </div>
           </div>
           <div class="small-12 medium-8 large-9 columns">
               <div class="row wow slideInUp" data-wow-delay="0.5s" data-wow-offset="100">
-                  <div class="bottle-cont chipotle">
-                        <a href="#" title="Chipotle"><div class="bottle lazy" data-original="images/bottle-lime.png"></div>
-                            <div class="bottle-hover lazy" data-original="images/bottle-lime.png"></div></a>
+                  <div class="bottle-cont chipotle" data-flavor="chipotle">
+                        <a href="#" title="Chipotle"><div class="bottle lazy" data-original="images/bottle-chipotle.png"></div>
+                            <div class="bottle-hover lazy" data-original="images/bottle-chipotle.png"></div></a>
                   </div>
-                  <div class="bottle-cont lime">
+                  <div class="bottle-cont lime" data-flavor="lime">
                         <a href=""><div class="bottle lazy" data-original="images/bottle-lime.png"></div>
                             <div class="bottle-hover lazy" data-original="images/bottle-lime.png"></div></a>
                   </div>
-                  <div class="bottle-cont green-pepper">
-                        <a href=""><div class="bottle lazy" data-original="images/bottle-lime.png"></div>
-                            <div class="bottle-hover lazy" data-original="images/bottle-lime.png"></div></a>
+                  <div class="bottle-cont green-pepper" data-flavor="green-pepper">
+                        <a href=""><div class="bottle lazy" data-original="images/bottle-greenpepper.png"></div>
+                            <div class="bottle-hover lazy" data-original="images/bottle-greenpepper.png"></div></a>
                   </div>
-                  <div class="bottle-cont chili">
-                        <a href=""><div class="bottle lazy" data-original="images/bottle-lime.png"></div>
-                            <div class="bottle-hover lazy" data-original="images/bottle-lime.png"></div></a>
+                  <div class="bottle-cont chili" data-flavor="chili">
+                        <a href=""><div class="bottle lazy" data-original="images/bottle-chiligarlic.png"></div>
+                            <div class="bottle-hover lazy" data-original="images/bottle-chiligarlic.png"></div></a>
                   </div>
-                  <div class="bottle-cont original">
-                        <a href=""><div class="bottle lazy" data-original="images/bottle-lime.png"></div>
-                            <div class="bottle-hover lazy" data-original="images/bottle-lime.png"></div></a>
+                  <div class="bottle-cont original" data-flavor="original">
+                        <a href=""><div class="bottle lazy" data-original="images/bottle-original.png"></div>
+                            <div class="bottle-hover lazy" data-original="images/bottle-original.png"></div></a>
                   </div>
               </div>
           </div>
@@ -174,14 +196,14 @@
                 </div>
             </div>
             <div class="row" data-equalizer>
-              <div class="small-12 medium-8 large-8 columns wow slideInLeft" data-equalizer-watch>
+              <div class="small-12 medium-8 large-8 columns wow fadeIn" data-equalizer-watch>
                     <img class="lazy" src="images/red-bulls.png">
                     <div class="event">
                     <hr class="yellow-chalkline">
                     <span>Sept. 24 2015</span> CHOLULA AND RED BULLS SPONSORSHIP EVENT
                     </div>
               </div>
-              <div class="small-12 medium-4 large-4 columns wow slideInRight" data-equalizer-watch>
+              <div class="small-12 medium-4 large-4 columns wow fadeIn" data-equalizer-watch>
                   <img class="lazy" src="images/food-network.png">        
                   <div class="event">
                       <hr class="yellow-chalkline">
@@ -346,7 +368,7 @@
         <div id="copyright-cont">
             <div class="row">
                 <div class="small-12 medium-12 large-12 columns">
-                    <div class="links-copyright"><span>Food Service</span> | <a href="">Privacy Policy</a>  | <a href="">Terms and Conditions</a></div>
+                    <div class="links-copyright"><a href="">Food Service</a> | <a href="">Privacy Policy</a>  | <a href="">Terms and Conditions</a></div>
                     <small>The trademarks Cholula, the Cholula bottle design and the Cholula label design are owned by and used under license from the trademark owner, Salsas de Jalisco Cacu, S.A. de C.V.</small> 
                 </div>
             </div>
