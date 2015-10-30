@@ -47,28 +47,36 @@
 
   <main class="wrapper">
 
+    <div class="logo-mobile text-center show-for-small-only">
+        <a href="" title="Cholula"><img class="lazy" data-original="images/cholula-logo.png"></a>
+    </div>
+
       <div id="landing-slider" class="row">
           <div class="small-12 columns">
             <hr class="yellow-chalkline">
             <div class="main-slider">
                 <div class="slide-1">
-                    <div class="row collapse">
-                        <div class="small-12 medium-12 large-6 columns">
-                            <img class="animated tada" alt="Uncap Real Flavor" src="images/uncal-real-flavor.png">
-                            <div id="uncap-copy" class="row collapse">
-                                <div class="small-12 medium-7 large-8 columns">
-                                    <img src="images/signature-unique-spcies.png">
-                                </div>
-                                <div class="small-12 medium-5 large-4 columns">
-                                    <p>The distinct peppers and unique spices of Cholula® Hot Sauce bring a flavor celebration to everyday foods. Food tastes better than you ever thought possible when you Uncap Real Flavor.</p>
-                                    <a class="chalk-button learn-more animated" href="" title="">Learn More</a>
+                    <div data-interchange="[../responsive/landing_slider-small.html, (small)], [../responsive/landing_slider-medium-up.html,(medium)], [../responsive/landing_slider-medium-up.html,(large)]">
+                        <!-- Fallback content -->
+                        <div class="row collapse">
+                            <div class="small-12 medium-12 large-6 columns">
+                                <img class="animated tada" alt="Uncap Real Flavor" src="images/uncal-real-flavor.png">
+                                <div id="uncap-copy" class="row collapse">
+                                    <div class="small-12 medium-7 large-8 columns">
+                                        <img src="images/signature-unique-spcies.png">
+                                    </div>
+                                    <div class="small-12 medium-5 large-4 columns">
+                                        <p>The distinct peppers and unique spices of Cholula® Hot Sauce bring a flavor celebration to everyday foods. Food tastes better than you ever thought possible when you Uncap Real Flavor.</p>
+                                        <a class="chalk-button learn-more animated" href="" title="">Learn More</a>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="small-12 medium-12 large-6 columns">
+                                <img class="caps animated bounce" src="images/caps.png">
+                                <img class="bottles" src="images/landing-bottles.png">
+                            </div>
                         </div>
-                        <div class="small-12 medium-12 large-6 columns">
-                            <img class="caps animated bounce" src="images/caps.png">
-                            <img class="bottles" src="images/landing-bottles.png">
-                        </div>
+                        <!-- End Fallback content -->
                     </div>
                 </div>
                 <div class="slide-2">
@@ -120,7 +128,7 @@
           </div>
       </div>
 
-      <div id="authentic-flavors" class="row">
+      <div id="authentic-flavors" class="row show-for-medium-up">
           <div class="small-12 medium-4 large-3 columns text-center">
               <div class="row">
                   <div class="small-12 medium-12 large-12 columns">
@@ -228,7 +236,7 @@
                 </div>
               </div>
               <div class="row">
-                  <div class="side-videos small-12 medium-3 large-3 columns wow slideInLeft" data-wow-offset="100">
+                  <div class="side-videos small-12 medium-3 large-3 columns wow slideInLeft hide-for-small" data-wow-offset="100">
                         <div class="video-link" data-reveal-id="video-modal" data-video-url="https://www.youtube.com/embed/LxF1LfyY3ro">
                             <img class="lazy" data-original="images/video.png">
                         </div>
@@ -240,7 +248,7 @@
                       </div>
                       <div class="video-cap">Buzzfeed Uncaps Real Flavor</div>
                   </div>
-                  <div class="side-videos small-12 medium-3 large-3 columns wow slideInRight" data-wow-offset="100">
+                  <div class="side-videos small-12 medium-3 large-3 columns wow slideInRight hide-for-small" data-wow-offset="100">
                       <div class="video-link" data-reveal-id="video-modal" data-video-url="https://www.youtube.com/embed/5mZovjRlkWs">
                           <img class="lazy" data-original="images/video.png">
                       </div>
@@ -273,7 +281,7 @@
                         </div>
                   </div>
                   <div id="connections-links" class="row text-center">
-                      <div class="small-12 medium-4 large-4 columns">
+                      <div class="small-12 medium-4 large-4 columns hide-for-small">
                           <img class="lazy" data-original="images/mail.png">
                           <div class="connect-title">Sign Up For Our Newsletter</div>
                           <form action="">
@@ -298,8 +306,8 @@
                               <li class="instagram"><a href="">Instagram</a></li>
                               <li class="twitter"><a href="">Twitter</a></li>
                           </ul>
-                          <div class="connect-title">Social Media</div>
-                          <a class="chalk-button see-more animated" href="" title="">See More</a>
+                          <div class="connect-title hide-for-small">Social Media</div>
+                          <a class="chalk-button see-more animated hide-for-small" href="" title="">See More</a>
                       </div>
                   </div>
               </div>
@@ -317,7 +325,7 @@
                 </div>
             </div>
         </div>
-        <div class="row" id="footer-nav">
+        <div class="row hide-for-small" id="footer-nav">
             <div class="small-12 medium-12 large-11 large-centered columns">
                 <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-6">
                     <li>
